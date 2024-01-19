@@ -1,17 +1,18 @@
 .start-panel {
     display: grid;
-grid-template-columns: 50px 170px 1fr;
+grid-template-columns: 50px minmax(170px, 1fr) 3fr;
 }
 .start-panel__icons {
     display: grid;
-    grid-template-rows: 1fr repeat(5, 50px);
+    grid-template-rows: 1fr;
+    grid-auto-rows: 50px;
 
 
 
 }
 .start-panel__grid {
     display: grid;
-    grid-auto-rows: 200px;
+    grid-auto-rows: max-content;
     grid-template-areas: 
     "office other "
     "web other";
